@@ -1,0 +1,971 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+h1, h2, h3, h4, h5, h6, ul, p {
+    margin: 0px;
+    padding: 0px;
+    font-family: Roboto, sans-serif;
+    font-weight: 500;
+}
+
+ul {
+    list-style: none;
+}
+/* header css  */
+
+header {
+}
+
+.top_header {
+    padding: 15px 0px;
+}
+
+.header_info {
+    display: flex;
+    justify-content: end;
+}
+
+.info_item {
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.icon {
+    font-size: 24px;
+    margin-right: 10px;
+    color: rgb(246, 145, 101);
+}
+
+.icon i {
+}
+
+.info {
+}
+
+.info h4 {
+    font-size: 18px;
+    text-transform: capitalize;
+}
+
+.info p {
+    font-size: 14px;
+    color: rgba(128, 128, 128, 0.74);
+    font-weight: 600;
+}
+
+.main_header {
+    background: rgb(0, 204, 225);
+}
+
+.btn-appoint {
+    background: rgb(246, 145, 101);
+    padding: 15px 30px;
+    color: rgb(255, 255, 255);
+    border-radius: 0px;
+    text-transform: uppercase;
+    clip-path: polygon(10% 0px, 100% 0px, 90% 100%, 0% 100%);
+    transition: .5s all ease-in-out;
+}
+
+.btn-appoint:hover {
+    background: rgb(195, 82, 33);
+    color: rgb(255, 255, 255);
+}
+
+.btn-appoint i {
+    margin-right: 6px;
+}
+
+.nav-item {
+    margin-right: 5px;
+}
+
+.nav-link {
+    /* color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    position: relative;
+    z-index: 0; */
+
+    
+        color: #fff;
+        font-size: 16px;
+        text-transform: uppercase;
+        padding: 0;
+        font-weight: 400;
+        transition: .5s all ease-in-out;
+        clip-path: polygon(10% 0, 100% 0%, 90% 100%, 0% 100%);
+        padding: 16px;
+        margin: 0px 8px;
+        position: relative;
+        z-index: 0;
+    
+        
+            
+        
+}
+
+.nav-link::before {
+    position: absolute;
+    content: "";
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
+    height: 0%;
+    background-color: rgb(246, 145, 101);
+    transition: all 0.4s ease-in-out 0s;
+    z-index: -1;
+}
+
+.nav-link:hover::before {
+    height: 100%;
+}
+
+.nav-link:hover {
+    color: rgb(255, 255, 255);
+}
+
+.navbar {
+    padding: 0px;
+}
+
+.banner {
+    background-image: url("../images/banner.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+}
+
+.banner h2 {
+    background: rgb(0, 204, 225);
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    font-size: 26px;
+    padding: 5px 10px;
+    display: inline-block;
+}
+
+.banner h1 {
+    color: rgb(255, 255, 255);
+    background: rgb(246, 145, 101);
+    font-size: 36px;
+    text-transform: uppercase;
+    padding: 5px 10px;
+    margin: 15px 0px;
+    display: inline-block;
+}
+
+.banner p {
+}
+
+.btn_learn {
+    background: rgb(246, 145, 101);
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    border-radius: 0px;
+    margin: 20px 0px;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.btn_learn:hover {
+    background: rgb(164, 76, 38);
+    color: rgb(255, 255, 255);
+}
+
+.btn_book {
+    background-color: rgb(0, 204, 225);
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    border-radius: 0px;
+    margin: 20px 0px 20px 7px;
+}
+
+.btn_book:hover {
+    background-color: rgb(14, 144, 159);
+    transition: all 0.3s ease-in-out 0s;
+    color: rgb(255, 255, 255);
+}
+
+.banner_img {
+    position: absolute;
+    bottom: 0px;
+    width: 50%;
+    right: 5%;
+}
+
+.height {
+    min-height: 80vh;
+    align-items: center;
+}
+
+.item_two {
+    width: 32%;
+}
+
+.banner_carousel {
+    position: static;
+}
+
+.banner_carousel .owl-dots {
+   
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    text-align: center;
+    transform: translateX(-50%);
+    
+}
+
+.banner_carousel .owl-dots .owl-dot {
+    margin: 3px;
+}
+
+.banner_carousel .owl-dots .owl-dot span {
+    display: block;
+    height: 10px;
+    width: 10px;
+    background: rgb(246, 145, 101);
+    border-radius: 50%;
+   
+}
+.banner_carousel .owl-dots .active span{
+    background: #00cce1;
+
+}
+.banner_carousel .owl-nav{
+
+}
+.banner_carousel .owl-nav .owl-prev,.brand_carousel .owl-nav .owl-prev{
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+   
+    
+}
+.banner_carousel .owl-nav .owl-prev span,.brand_carousel .owl-nav .owl-prev span{
+    
+        line-height: 30px;
+        display: block;
+        height: 35px;
+        width: 22px;
+        background: rgb(246, 145, 101);
+        color: rgb(255, 255, 255);
+        font-size: 25px;
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        left: 0%;
+        transform: translateY(-50%);
+    
+    
+    
+}
+.banner_carousel .owl-nav .owl-next,.brand_carousel .owl-nav .owl-next{
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    
+
+}
+
+/* ****************************************** */
+.banner_carousel .owl-nav .owl-next span,.brand_carousel .owl-nav .owl-next span{
+    
+        line-height: 30px;
+        display: block;
+        height: 35px;
+        width: 25px;
+        background: rgb(0, 204, 225);
+        color: rgb(255, 255, 255);
+        font-size: 25px;
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        right: 0%;
+        transform: translateY(-50%);
+    
+    
+    
+}
+
+.agency {
+    position: relative;
+    padding: 50px 0px;
+}
+
+.agency_image {
+    position: absolute;
+    content: "";
+    left: 1%;
+    bottom: 0px;
+    width: 38%;
+}
+
+.agency_image img {
+    width: 550px;
+}
+
+.agency h3 {
+    text-transform: capitalize;
+    font-size: 35px;
+    font-family: Roboto, sans-serif;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+}
+
+.agency p {
+    color: rgb(112, 112, 112);
+    font-size: 16px;
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
+    margin: 12px 0px;
+}
+
+.teeth_details {
+}
+
+.teeth_image {
+    margin-bottom: 10px;
+}
+
+.teeth_image img {
+    width: 28px;
+}
+
+.teeth_details h4 {
+    text-transform: capitalize;
+    font-size: 21px;
+    font-family: Roboto, sans-serif;
+    font-weight: 500;
+    color: rgb(54, 54, 54);
+}
+
+.teeth_details p {
+}
+
+.doctor_section {
+    padding-top: 60px;
+    background: rgb(249, 249, 249);
+    padding-bottom: 30px;
+}
+
+.heading {
+    text-align: center;
+}
+
+.heading h3 {
+    font-family: Roboto, sans-serif;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin-bottom: 6px;
+    font-size: 35px;
+    color: rgb(0, 0, 0);
+}
+
+.heading p {
+    font-family: Roboto, sans-serif;
+    font-weight: 500;
+    font-size: 17px;
+    margin: 8px 0px;
+    line-height: 22px;
+    color: rgb(139, 139, 139);
+}
+
+.design_box {
+    margin-bottom: 15px;
+}
+
+.design_box img {
+    width: 4%;
+}
+
+.doctor_wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 37px;
+}
+
+.doctor_details {
+    width: 31%;
+    text-align: center;
+    border-bottom: 3px solid rgb(119, 228, 239);
+    margin-bottom: 42px;
+    padding-bottom: 30px;
+    background: rgb(255, 255, 255);
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.doctor_image {
+    background: rgb(231, 231, 231);
+    position: relative;
+}
+
+.doctor_image::before {
+    position: absolute;
+    content: "";
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 0%;
+    background-color: rgb(69, 69, 69);
+    transition: all 0.5s ease-in-out 0s;
+}
+
+.doctor_details:hover .doctor_image::before {
+    height: 100%;
+    opacity: 0.65;
+}
+
+.doctor_details:hover {
+    border-color: rgb(246, 145, 101);
+}
+
+.doctor_details:hover h4 {
+    color: rgb(246, 145, 101);
+}
+
+.doctor_image img {
+}
+
+.doctor_details h4 {
+    color: rgb(54, 54, 54);
+    font-size: 22px;
+    font-family: Roboto, sans-serif;
+    font-weight: 500;
+    margin-top: 18px;
+    text-transform: capitalize;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.doctor_details p {
+    text-transform: capitalize;
+    font-size: 16px;
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
+    color: rgb(112, 112, 112);
+    margin-top: 4px;
+}
+
+.icon_box {
+    display: flex;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 30%;
+    justify-content: space-between;
+    opacity: 0;
+}
+
+.fb, .twitter, .google {
+    height: 35px;
+    width: 35px;
+    text-align: center;
+    line-height: 35px;
+    border: 1px solid rgb(255, 255, 255);
+    background: transparent;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.fb a i, .twitter a i, .google a i {
+    color: rgb(255, 255, 255);
+}
+
+.fb:hover, .twitter:hover, .google:hover {
+    background: rgb(246, 145, 101);
+}
+
+.doctor_details:hover .icon_box {
+    opacity: 1;
+}
+
+.service_section {
+    padding: 55px 0px;
+}
+
+.service_wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 40px;
+}
+
+.service_box {
+    width: 32%;
+    margin-bottom: 25px;
+    border: 3px solid rgb(235, 235, 235);
+    padding: 25px;
+    transition: all 0.5s ease-in-out 0s;
+}
+
+.service {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.service_image {
+    width: 8%;
+    margin-right: 13px;
+}
+
+.service_image img {
+}
+
+.service h5 {
+    text-transform: capitalize;
+    color: rgb(54, 54, 54);
+    font-size: 22px;
+    font-family: Roboto, sans-serif;
+    font-weight: 600;
+    transition: all 0.5s ease-in-out 0s;
+}
+
+.service_box p {
+    color: rgb(112, 112, 112);
+    font-size: 16px;
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
+    margin-bottom: 7px;
+}
+
+.read_more {
+}
+
+.read_more a {
+    text-decoration: none;
+    text-transform: capitalize;
+    color: rgb(145, 145, 145);
+    font-size: 16px;
+    font-family: Roboto, sans-serif;
+    font-weight: 500;
+    margin-top: 5px;
+}
+
+.read_more i {
+}
+
+.service_box:hover, .service_box:hover .service h5, .service_box:hover .read_more a {
+    border-color: rgb(246, 145, 101);
+    color: rgb(246, 145, 101);
+    transition: all 0.5s ease-in-out 0s;
+}
+
+.pricing_section {
+    padding: 55px 0px;
+    background-color: rgb(249, 249, 249);
+}
+
+.pricing_box {
+    border: 4px solid rgb(255, 255, 255);
+    text-align: center;
+    padding: 20px 0px;
+    transition: all 0.5s ease-in-out 0s;
+}
+
+.pricing_box h3 {
+    text-transform: capitalize;
+    color: rgb(0, 204, 225);
+    font-size: 28px;
+    font-family: Roboto, sans-serif;
+    font-weight: 500;
+    margin-bottom: 3px;
+    transition: all 0.5s ease-in-out 0s;
+}
+
+.pricing_box p {
+    color: rgb(112, 112, 112);
+    font-size: 15px;
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
+    margin-bottom: 14px;
+}
+
+.price {
+    background: rgb(255, 255, 255);
+    padding: 15px 0px;
+    transition: all 0.5s ease-in-out 0s;
+}
+
+.price h1 {
+    font-size: 45px;
+    font-family: Roboto, sans-serif;
+    font-weight: 600;
+    color: rgb(0, 204, 225);
+    transition: all 0.5s ease-in-out 0s;
+}
+
+.price h5 {
+    font-family: Roboto, sans-serif;
+    color: rgb(0, 204, 225);
+    font-weight: 500;
+    font-size: 16px;
+    text-transform: lowercase;
+    transition: all 0.5s ease-in-out 0s;
+}
+
+.list {
+    padding: 16px 0px;
+}
+
+.list p {
+    color: rgb(112, 112, 112);
+    font-family: Roboto, sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    text-transform: capitalize;
+    margin: 24px 0;
+}
+
+.btn_sign_up {
+    padding: 8px 30px;
+    background: rgb(0, 204, 225);
+    border-radius: 2px;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    font-family: Roboto, sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    margin-top: 7px;
+    transition: all 0.5s ease-in-out 0s;
+}
+
+.pricing_box:hover {
+    border-color: rgb(246, 145, 101);
+}
+
+.pricing_box:hover h3 {
+    color: rgb(246, 145, 101);
+}
+
+.pricing_box:hover .price {
+    background-color: rgb(246, 145, 101);
+}
+
+.pricing_box:hover .price h1, .pricing_box:hover .price h5 {
+    color: rgb(255, 255, 255);
+}
+
+.pricing_box:hover .btn_sign_up {
+    background-color: rgb(246, 145, 101);
+    color: rgb(255, 255, 255);
+}
+
+/* brand section css starts*/
+.brand_section{
+    background-image: url(../images/bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 80px 0;
+    position: relative;
+    z-index: 2;
+
+}
+.brand_section::before{
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #060606;
+    opacity: .8;
+
+    z-index: -1;
+
+   
+}
+.brand_section .heading h3{
+    
+        font-family: Roboto, sans-serif;
+        font-weight: 600;
+        text-transform: capitalize;
+        margin-bottom: 6px;
+        font-size: 35px;
+        color: #fff;
+    
+}
+
+.brand_carousel div img{
+    width: 100px!important;
+    
+
+}
+.third_logo img{
+    width: 60px!important;
+}
+.fifth_logo img{
+
+    width: 50px!important;
+}
+.brand_carousel .owl-stage{
+    display: flex;
+    align-items: center;
+   
+}
+.brand_carousel .owl-nav{
+    display: block !important;
+}
+.brand_carousel .owl-item{
+    display: flex;
+    
+    justify-content: center;
+}
+/* brand section css ends*/
+
+
+.address_section {
+    padding: 50px 0px;
+    background-image: url("../images/map.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+    z-index: 2;
+    color: rgb(255, 255, 255);
+}
+
+.address_section::before {
+    position: absolute;
+    content: "";
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background: rgb(25, 25, 25);
+    opacity: 0.6;
+    z-index: -1;
+}
+.brand_section .heading h3,.brand_section .heading p{
+    
+        
+        color: #fff;
+       
+    
+}
+
+.dental_plus {
+}
+
+.d_logo {
+    width: 162px;
+    margin-bottom: 30px;
+}
+
+.d_logo img {
+}
+
+.dental_plus p {
+    color: rgb(180, 180, 180);
+    font-size: 16px;
+    font-family: Roboto, sans-serif;
+    font-weight: 500;
+}
+
+.dental_icon {
+    margin-top: 28px;
+}
+
+.dental_icon ul {
+}
+
+.dental_icon ul li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.social_icon {
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    text-align: center;
+    margin-right: 6px;
+}
+
+.social_icon i {
+    font-size: 26px;
+    color: rgb(7, 159, 175);
+}
+
+.dental_icon p {
+    color: rgb(180, 180, 180);
+    font-family: Roboto, sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.recent {
+}
+
+.recent_header {
+    margin-bottom: 30px;
+}
+
+.recent_header h2 {
+    text-transform: capitalize;
+    color: rgb(255, 255, 255);
+    font-size: 28px;
+    font-family: Roboto, sans-serif;
+    font-weight: 500;
+}
+
+.client_details {
+    display: flex;
+    align-items: center;
+    margin-bottom: 36px;
+}
+
+.c_image {
+    width: 100px;
+    height: 70px;
+    margin-right: 10px;
+}
+
+.c_image img {
+    width: 100%;
+}
+
+.c_addres h6 {
+    color: rgb(180, 180, 180);
+    font-size: 16px;
+    font-family: Roboto, sans-serif;
+    font-weight: 500;
+}
+
+.c_addres p {
+    color: rgb(119, 119, 119);
+    font-size: 14px;
+    font-family: Roboto, sans-serif;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+.newsletter {
+}
+
+.newsletter_header {
+    margin-bottom: 30px;
+}
+
+.newsletter_header h2 {
+    text-transform: capitalize;
+    color: rgb(255, 255, 255);
+    font-size: 28px;
+    font-family: Roboto, sans-serif;
+    font-weight: 500;
+}
+
+.newsletter p {
+    color: rgb(180, 180, 180);
+    font-size: 16px;
+    font-family: Roboto, sans-serif;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.form {
+    margin-top: 33px;
+}
+
+.form input {
+    background: transparent;
+    border: 1px solid rgb(61, 61, 61);
+    padding: 10px;
+    color: rgb(255, 255, 255);
+}
+
+.form input::placeholder {
+}
+
+.form input:focus {
+    outline: none;
+}
+
+.form input[type="submit"] {
+    border: 1px solid rgb(61, 61, 61);
+    padding: 12px 31px;
+    margin-left: 0px;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    font-family: Roboto, sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    background: rgba(246, 145, 101, 0.9);
+    border-radius: 2px;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.form input[type="submit"]:hover {
+    background-color: rgba(202, 98, 53, 0.9);
+}
+
+.follow {
+    margin-top: 44px;
+    display: flex;
+    align-items: center;
+}
+
+.follow h3 {
+    color: rgb(255, 255, 255);
+    font-size: 23px;
+}
+
+.follow_icon {
+}
+
+.follow_icon ul {
+    display: flex;
+}
+
+.follow_icon ul li {
+    margin-left: 16px;
+}
+
+.f_icon {
+    height: 30px;
+    width: 30px;
+    background: rgb(50, 50, 50);
+    line-height: 30px;
+    text-align: center;
+    transition: all 0.4s ease-in-out 0s;
+}
+
+.f_icon:hover {
+    background-color: rgba(246, 145, 101, 0.9);
+}
+
+.f_icon i {
+    color: rgb(255, 255, 255);
+}
+
+/* footer section css starts  */
+
+.footer_section {
+    padding: 25px 0px;
+    background-color: rgb(22, 22, 22);
+    text-align: center;
+}
+
+.footer_section p {
+    color: rgb(119, 119, 119);
+    font-family: Roboto, sans-serif;
+    font-weight: 500;
+    font-size: 17px;
+}
+
+.footer_section p a {
+    color: rgb(0, 204, 225);
+    font-family: Roboto, sans-serif;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 17px;
+}
+/* footer section css ends  */
